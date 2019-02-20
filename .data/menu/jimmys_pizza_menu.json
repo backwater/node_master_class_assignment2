@@ -1,0 +1,185 @@
+{
+   "Title":   "Jimmys Pizza - Main Menu",
+   "Quote": "We make pizza because we love pizza",
+   "Appetizers": [ 
+                   {
+                    "title":"Calamari",
+                    "description":"Delicious, freshly caught squid, marinated in our own secret blend of spices",
+                    "price":"12.99",
+                    "item_number":"1"
+                    },
+                    {
+                      "title":"Shrimp Fiorno",
+                      "description":"Spicy fat, wild caught shrimp",
+                      "price":"13.99",
+                      "item_number":"2"
+                    },
+                    {
+                      "title":"Escarole Soup",
+                      "description":"An Italian favorite, made with our own garden grown escarole",
+                      "price":"5.99",
+                      "item_number":"3"
+                    },
+                    {
+                      "title":"Garlic Rolls",
+                      "description":"A variation on the old country favorite.",
+                      "price":"3.99",
+                      "item_number":"4"
+                    }
+
+                 ],
+    "Salads": [ 
+                 {
+
+                  "title":"Caesar Salad",
+                  "description":"A classic made with the freshest ingredients.",
+                  "options": [
+                               { 
+                                 "title":"small",
+                                 "price":"5.99",
+                                 "item_number":"5"
+                               },
+                               {
+                                 "title":"large",
+                                 "price":"9.99",
+                                 "item_number":"6"
+                               }
+                             ]
+                 },
+                 {
+
+                  "title":"House Salad",
+                  "description":"A made with fresh arugala, romaine and butter lettuce",
+                  "options":[
+                              {
+                                "title":"small",
+                                "price":"4.99",
+                                "item_number":"7"
+                              },
+                              {
+                                "title":"large",
+                                "price":"8.99",
+                                "item_number":"8"
+                              },
+                              {
+                                "title":"house dressing",
+                                "item_number":"30"
+                                
+                              },
+                              {
+                                "title":"balsamic vinaigrette dressing",
+                                "item_number":"31"
+                                 
+                              },
+                              {
+                                "title":"ranch dressing",
+                                "item_number":"32"
+                                
+                              }
+                            ]
+
+                 }   
+ 
+              ],
+    "Entrees":[
+                {
+                      "title":"Chicken Milanaise",
+                      "description":"Try this Northern Italian favorite. Served with a side of spaghetti marinara.",
+                      "price":"19.99",
+                      "item_number":"9"
+                     
+                },
+
+                {
+                      "title":"Steak Sandwich",
+                      "description":"Served with french fries",
+                      "price":"13.99",
+                      "item_number":"119"
+                     
+                },
+
+                {
+                      "title":"Margherita Pizza",
+                      "description":"Perhaps the most illustrious pizza of all time. A thin crust cheese with our patented tomato sauce, fresh mozzarella, and topped with basil leaves.",
+                      "price":"15.99",
+                      "item_number":"10"
+                },
+                {
+                      "title":"Pepperoni Pizza",
+                      "description":"A pizza topped with our homemade pepperoni sausage",
+                      "price":"15.99",
+                      "item_number":"11"
+                },
+                {
+                      "title":"Make Your Own Pizza",
+                      "description":"Plain cheese pizza with build your own options.",
+                      "price":"9.99",
+                      "item_number":"12",
+                      "options":[
+                                  {
+                                    "title":"add hot peppers",
+                                    "price":"1.00",
+                                    "item_number":"71"
+                                  },
+                                  {
+                                    "title":"add pineapple",
+                                    "price":"2.00",
+                                    "item_number":"72"
+                                  },
+                                  {
+                                    "title":"add prosciutto",
+                                    "price":"4.00",
+                                    "item_number":"73"
+                                  },
+                                  {
+                                    "title":"add italian sausage",
+                                    "price":"3.00",
+                                    "item_number":"74"
+                                  },
+                                  {
+                                    "title":"add onions",
+                                    "price":"1.00",
+                                    "item_number":"75"
+                                  },
+                                  {
+                                    "title":"add mushrooms",
+                                    "price":"1.00",
+                                    "item_number":"76"
+                                  }
+                            ]
+                }
+              ],
+    "Ala Carte" : [
+                    {
+                      "title":"green_beans",
+                      "price":"1.75",
+                      "item_number":"201"
+                    },
+                                  
+                    { 
+                      "title":"carrots",
+                      "price":"1.25",
+                      "item_number":"202"
+                     },
+
+                     {
+                       "title":"vegetable medley",
+                       "price":"3.25",
+                       "item_number":"203"
+                     },
+
+                     {
+                       "title":"side of marinara",
+                       "price":"1.25",
+                       "item_number":"301"
+                     },
+
+                     {
+                       "title":"side of pesto",
+                       "price":"2.25",
+                       "item_number":"302"
+                     }
+
+                   ]                                 
+
+}
