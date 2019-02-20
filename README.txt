@@ -107,9 +107,9 @@ UPDATE USER TOKEN
 http method: PUT
 http://localhost:3000/tokens
 
-{
-    "extend": true,
-    "id": "npedbrjkafkqiptfeiee"
+{  
+    "id": "npedbrjkafkqiptfeiee",
+    "extend": true
 }
 
 returns : 
