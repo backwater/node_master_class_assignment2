@@ -16,7 +16,7 @@ http://localhost:3000/users
 
 http method: POST
 
-
+POST BODY:
 
 // creating a given user
 {
@@ -55,6 +55,8 @@ http://localhost:3000/tokens
  
 http method: POST 
 
+POST BODY:
+
 {
 	"email":"jack@gmail.com",
 	"password":"tester"
@@ -85,8 +87,7 @@ OR  ( if email issue )
 
 GET USER TOKEN
 
-
-http://localhost:3000/tokens?id=cnhgeqcgobhbmppihagc&email=jack@gmail.com
+http://localhost:3000/tokens?id=cnhgeqcgobhbmppihagc&email=jack@gmail.com   // sample query string
 http method: GET
 
 returns:
@@ -111,8 +112,8 @@ UPDATE USER TOKEN
 http method: PUT
 http://localhost:3000/tokens
 
-{
-    
+POST BODY:
+{   
     "id": "npedbrjkafkqiptfeiee",
     "extend": true,
 }
@@ -135,7 +136,7 @@ DELETE USER TOKEN
 
 http method: DELETE
 
-http://localhost:3000/tokens?id=npedbrjkafkqiptfeiee
+http://localhost:3000/tokens?id=npedbrjkafkqiptfeiee // sample query string
 
 returns
 
@@ -155,13 +156,13 @@ GET USER
 
 http method: GET
 
-http://localhost:3000/users?email=jack@gmail.com
+http://localhost:3000/users?email=jack@gmail.com  //sample query string
 
 with valid token in header
 
 RETURNS:
 
-{                            //success
+{                                     //success
     "firstName": "Jack",
     "lastName": "Nameedit",
     "email": "jack@gmail.com",
@@ -193,6 +194,7 @@ OR
 http method: PUT
 http://localhost:3000/users
 
+POST BODY:
 
 {                     
 	"firstName":"Jack",
@@ -223,7 +225,7 @@ OR
 
 http method: delete
 
-http://localhost:3000/users?email=jack@gmail.com
+http://localhost:3000/users?email=jack@gmail.com //sample query string
 
 with valid token in header
 
@@ -254,7 +256,6 @@ OR
 
 
 ///// GET MENU 
-
 
 with valid user token *and* email in header
 
@@ -353,11 +354,8 @@ OR
 
    And POST again. 
   
-
-
 http://localhost:3000/order-complete
 http method: POST
-
 
 
 returns:
