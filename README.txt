@@ -105,7 +105,7 @@ UPDATE USER TOKEN
 
 
 http method: PUT
-http://localhost:3000/tokens?id=cnhgeqcgobhbppihagc&email=jack@gmail.com
+http://localhost:3000/tokens
 
 {
     "extend": true,
