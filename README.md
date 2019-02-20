@@ -1,10 +1,7 @@
 # node_master_class_assignment2
 code for node master class assignment 2
 
-
-
-
-//// START SERVER
+//// TO START SERVER:
 
 node index
 
@@ -32,7 +29,7 @@ POST BODY:
 	"tosAgreement":true
 }
 
-returns:
+RETURNS:
 
 {
     "Congratulations!": "You have successfully registered as an online customer of Jimmy's Pizzeria!"
@@ -62,8 +59,7 @@ POST BODY:
 	"password":"tester"
 }
 
-
-returns: 
+RETURNS: 
 
 {
     "email": "jack@gmail.com",
@@ -88,9 +84,10 @@ OR  ( if email issue )
 GET USER TOKEN
 
 http://localhost:3000/tokens?id=cnhgeqcgobhbmppihagc&email=jack@gmail.com   // sample query string
+
 http method: GET
 
-returns:
+RETURNS:
 
 {
     "email": "jack@gmail.com",         //success
@@ -108,9 +105,9 @@ OR
 
 UPDATE USER TOKEN
 
+http://localhost:3000/tokens
 
 http method: PUT
-http://localhost:3000/tokens
 
 POST BODY:
 {   
@@ -118,7 +115,7 @@ POST BODY:
     "extend": true,
 }
 
-returns : 
+RETURNS: 
 
 {} //success
 
@@ -134,11 +131,11 @@ OR
 
 DELETE USER TOKEN
 
-http method: DELETE
-
 http://localhost:3000/tokens?id=npedbrjkafkqiptfeiee // sample query string
 
-returns
+http method: DELETE
+
+RETURNS:
 
 {} //success 
 
@@ -154,9 +151,9 @@ OR
 
 GET USER
 
-http method: GET
-
 http://localhost:3000/users?email=jack@gmail.com  //sample query string
+
+http method: GET
 
 with valid token in header
 
@@ -175,12 +172,12 @@ RETURNS:
 }
 
 
-OR 
+OR:
 
 { "Error": "Token or user email is invalid." }
 
 
-OR
+OR:
 
 { 'Error': 'Missing required field' } // missing valid email
 
@@ -204,7 +201,7 @@ POST BODY:
     "email":"jack@gmail.com" // REQUIRED
 }
 
-returns:  
+RETURNS: 
 
 {}  // success
 
@@ -223,14 +220,14 @@ OR
 
 /// DELETE USER 
 
-http method: delete
-
 http://localhost:3000/users?email=jack@gmail.com //sample query string
+
+http method: delete
 
 with valid token in header
 
 
-returns: 
+RETURNS:
 
 {} //success 
 
@@ -259,13 +256,12 @@ OR
 
 with valid user token *and* email in header
 
-http method: GET
-
 http://localhost:3000/menu
 
+http method: GET
 
 
-returns: 
+RETURNS:
 
 menu json object listing food items  //success
 
@@ -285,9 +281,9 @@ OR
 
 http://localhost:3000/order
 
-with valid user token *and* email in header
-
 http method: POST
+
+with valid user token *and* email in header
 
 
 ** The user will need to review the JSON menu ( via http://localhost:3000/menu, ( since there is no front end of application ) and choose the *item numbers* of the particular dish he/she wants to order.
@@ -300,11 +296,12 @@ http method: POST
 
 3) Paste the array of selected item numbers into the post body
 
+POST BODY:
 
-["5","7", "119"]
+["5","7", "119"]   // a sample
 
 
-returns:  //success 
+RETURNS: 
 
 {
     "Please Confirm Your Order:": [
@@ -348,18 +345,17 @@ OR
 
    http://localhost:3000/order 
 
-   TO 
+   TO:
 
    http://localhost:3000/order-complete
 
-   And POST again. 
+   And now POST again to complete order.  
   
 http://localhost:3000/order-complete
+
 http method: POST
 
-
-returns:
-
+RETURNS:
 
 {                                 //success
     "Order_Status": "Completed",     
